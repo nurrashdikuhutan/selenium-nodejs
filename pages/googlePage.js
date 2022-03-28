@@ -18,7 +18,7 @@ class GooglePage {
         return {
             searchBar: By.name('q'),
             searchButton: By.xpath('.//input[@value="Google Search"]'),
-            resultsList: By.xpath(".//div/a/h3[@class='LC20lb MBeuO DKV0Md']")
+            resultsList: By.xpath(".//a/div/cite[@role='text']")
         };
     }
 
@@ -42,7 +42,7 @@ class GooglePage {
         var found = false;
         for(let link of links) {
             var text = await link.getText();
-            if ( text === strSearch ) found = true;
+            if ( text.indexOf(strSearch) > 0 ) found = true;
         };
         return found;
     }
