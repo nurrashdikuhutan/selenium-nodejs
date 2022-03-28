@@ -2,10 +2,10 @@
 nur kuhutan searching text in google
 
 How To Run:
-npm install
-npm test googleSearch
+- npm install
+- npm test googleSearch
 
-Things to ADD:
+Things to Add:
 - Github Action Integration by creating yml file
 - Sauce Lab runnner for cloud execution
 - Reporting and Logging
